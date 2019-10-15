@@ -2,10 +2,18 @@ tests:
 	jupyter nbconvert --to script example_index.ipynb
 	python3 -m pytest --disable-pytest-warnings -v
 
-example1:
+question1:
 	jupyter nbconvert --to script example_index.ipynb
-	python3 -m pytest --disable-pytest-warnings -v -m example_1
+	python3 -m pytest --disable-pytest-warnings -v -m question1
 
-example2:
+question2:
 	jupyter nbconvert --to script example_index.ipynb
-	python3 -m pytest --disable-pytest-warnings -v -m example_2
+	python3 -m pytest --disable-pytest-warnings -v -m question2
+
+question3:
+	jupyter nbconvert --to script example_index.ipynb
+	python3 -m pytest --disable-pytest-warnings -v -m question3
+    
+question4:
+	jupyter nbconvert --to script example_index.ipynb
+	python3 -m pytest --disable-pytest-warnings -v -m question4
